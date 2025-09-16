@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <style>
-        body{
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <header><h1>Registration Page</h1></header>
+    <header>
+       <h1><img src="https://static.vecteezy.com/system/resources/previews/035/727/676/non_2x/3d-account-login-and-password-form-user-authorization-login-authentication-page-sign-up-concept-login-page-with-pencil-3d-rendering-illustration-vector.jpg" alt="" width="50" height="50">Registration Page</h1>
+    </header>
     <main class="main"> 
-        <form action="welcome.html">
+        <form action="welcome.html" method="get">
         <label for="name">Name:</label>
         <input type="text" placeholder="Enter your Name" required><br><br>
         <label for="rollno">Roll No:</label>
@@ -22,10 +21,19 @@
         <input type="email" placeholder="Enter your Email" required><br><br>
         <label for="age">Age:</label>
         <input type="number" placeholder="Enter your age" required><br><br>
-         <label for="gender">Gender:</label>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date"><br><br>
+        <label for="add">Address</label>
+        <textarea name="add" id="add">Enter your address</textarea><br><br>
+        <label for="branch">Branch:</label>
+        <input type="radio" name="branch" id="it">IT
+        <input type="radio" name="branch" id="ce">CE
+        <input type="radio" name="branch" id="aiml">AIML
+        <input type="radio" name="branch" id="cseds">CSEDS <br><br>
+         <!-- <label for="gender">Gender:</label>
          <input type="radio" name="gender" id="male">Male
-         <input type="radio" name="gender" id="female">Female <br><br>
-         <label for="lang">Language:</label>
+         <input type="radio" name="gender" id="female">Female <br><br> -->
+         <label for="lang">Skills:</label>
          <select name="lang" id="lang">
             <option value="C++">C++</option>
             <option value="Java">Java</option>
@@ -33,6 +41,8 @@
             <option value="TypeScript">TypeScript</option>
             <option value="select-Lang" selected>select-Lang</option>
          </select><br><br>
+         <label for="file"></label>
+         <input type="file"><br><br>
          <input type="submit" value="submit">
          <input type="reset" value="reset">
         </form></main>
