@@ -8,20 +8,51 @@
         div{
             height: 100px;
             width: 100px;
+            border-radius: 50px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div>Hello I'am a div</div>
-    <button id="1">Click me</button>
-    <button id="2">Click me</button>
-    <button id="3">Click me</button>
-    <button id="4">Click me</button>
+    <div>Hello</div>
+    <br>
+    <button id="btn1">Click me</button>
+    <button id="btn2">Click me</button>
+    <button id="btn3">Click me</button>
+    <button id="btn4">Click me</button>
     <script>
-        let btn1 = document.querySelector("#1");
-        btn1.addEventListener("click",function(){
-            console.log("green");
-        });
+        let btn1 = document.querySelector('#btn1');
+        btn1.addEventListener("click",setColor);
+        function setColor()
+        {
+            let div = document.querySelector("div");
+            div.style.backgroundColor = 'green';
+            div.style.border = '2px solid black'
+        }
+        let btn2 = document.querySelector('#btn2');
+        btn2.addEventListener("click",setColorRed);
+        function setColorRed()
+        {
+            let div = document.querySelector("div");
+            div.style.backgroundColor = 'red';
+            div.style.border = '2px solid black'
+        }
+        let btn3 = document.querySelector('#btn3');
+        btn3.addEventListener("click",setColorBlu);
+        function setColorBlu()
+        {
+            let div = document.querySelector("div");
+            div.style.backgroundColor = 'blue';
+            div.style.border = '2px solid black'
+        }
+        let btn4 = document.querySelector('#btn4');
+        btn4.addEventListener("click",setColorYell);
+        function setColorYell()
+        {
+            let div = document.querySelector("div");
+            div.style.backgroundColor = 'yellow';
+            div.style.border = '2px solid black'
+        }
     </script>
 </body>
 </html>
