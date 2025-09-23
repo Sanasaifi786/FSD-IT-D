@@ -1,4 +1,5 @@
 let isOn = false;
+let bulb = document.getElementById("bulb");
 function colorHandler(color) {
   if (isOn) {
     bulb.style.backgroundColor = 'gray';
