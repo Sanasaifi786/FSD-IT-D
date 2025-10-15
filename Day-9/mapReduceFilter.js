@@ -49,9 +49,10 @@ const mapData = data.map((i)=>i.prodName);
 // });
 // console.log(filData);
 
-const color = data.filter((i)=>i.color.filter((col)=>
-if(color[col]==='R')
-{
-    
+const color = data.filter((i)=>i.color.filter((col)=>{
+    if(color[col]==='R')
+    {
+        return i;
+    }
 }))
 console.log(color);
