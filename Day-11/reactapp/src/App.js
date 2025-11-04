@@ -4,7 +4,7 @@ import "./App.css";
 const Header = ()=>{
     return (
         <div className="header">
-            <img className="header-log" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"/>
+            <img className="header-logo" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"/>
             <ul className="nav-items">
                 <li>Home</li>
                 <li>Cart</li>
@@ -23,7 +23,7 @@ const Search = ()=>{
     )
 }
 
-const Products = ()=>{
+const Products = (product)=>{
     return (
         <div>
             <img src=""/>
@@ -37,7 +37,7 @@ const Body = ()=>{
         <>
         <Search/>
         <div className="product">
-            <Products/>
+            {Products.map((product)=><Products product = {Products}/>)}
         </div>
         </>
     )

@@ -4,10 +4,14 @@ body {
   background-color: #f3f3f3;
 }
 
-header {
-  background-color: #232f3e;
+.header {
+  background-color: burlywood;
   color: white;
   display: flex;
   align-items: center;
   padding: 10px 20px;
+}
+.header-logo{
+  width: 100px;
+  height: 100px;
 }
