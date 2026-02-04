@@ -19,8 +19,8 @@ function App(){
       <div className='image'>
       <h2>Image Slider</h2>
       <img src={image[index]} alt="" style={{
-    width: '50px',
-    height: '50px',
+    width: '50%',
+    height: '50%',
     backgroundColor: 'teal',
     transform: `rotate(${rotation}deg)`,
   }}/>
