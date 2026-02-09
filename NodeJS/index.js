@@ -30,6 +30,8 @@
 // })
 
 // const { log } = require('console');
+
+
 const fs = require('fs');
 // fs.writeFileSync("./it-a.txt","we are student of IT");
 // fs.writeFileSync("./Abes.txt","we are studnet of abes");
@@ -39,6 +41,29 @@ const fs = require('fs');
 // const result2 = fs.readFileSync("./it-a.txt","utf-8");
 // console.log(result2);
 
-fs.writeFile("./it-a.txt","we are student of IT",()=>{});
-console.log("File is created");
+// fs.writeFile("./it-a.txt","we are student of IT",()=>{});
+// console.log("File is created");
+
+// fs.readFile("./Abes.txt","utf-8",(error,result)=>{
+//     if(error){
+//         console.log("Error reading file:", error);
+//     } else {
+//         console.log("File content:", result);
+//     }
+// })
+
+// fs.appendFileSync("./Abes.txt",`and i am in 3rd year of BTech`);
+// fs.appendFile("./it-a.txt",` and i am in 3rd year of BTech`,()=>{});
+
+//copy file
+// fs.cpSync("./a1.txt","./b1.txt");
+// fs.cp("./a1.txt","./b2.txt",(error,result)=>{
+//     if(error){
+//         console.log("Error copying file:", error);
+//     }
+//     else{
+//         console.log("File copied successfully",result);
+//     }
+// });
+
 
