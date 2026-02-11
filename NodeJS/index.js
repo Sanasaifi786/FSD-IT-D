@@ -32,7 +32,7 @@
 // const { log } = require('console');
 
 
-const fs = require('fs');
+// const fs = require('fs');
 // fs.writeFileSync("./it-a.txt","we are student of IT");
 // fs.writeFileSync("./Abes.txt","we are studnet of abes");
 
@@ -66,4 +66,38 @@ const fs = require('fs');
 //     }
 // });
 
+//Delete file 
+// fs.unlinkSync("./b2.txt"); 
 
+// fs.existsSync("./b1.txt");
+
+
+const fs = require('fs');
+// async function readJSON() {
+//   const data = await fs.readFile("data.json", "utf8",(error,result)=>{
+//     if(error){
+//       console.log("Error reading file:", error);
+//     }
+//     else{
+//         const jsonData = JSON.parse(result);
+//         console.log(jsonData);
+//     }
+//   });
+// }
+// readJSON();
+
+const data = {
+  name: "Sana",
+  role: "Developer",
+  skills: ["Node.js", "Django"]
+};
+
+async function writeJSON() {
+  await fs.writeFile("data.json",JSON.stringify(data, null, 2),"utf8",(error)=>{
+    if(error){
+      console.log("Error writing file:", error);
+    }
+  console.log("JSON file written successfully");
+})};
+
+writeJSON();
