@@ -72,7 +72,7 @@
 // fs.existsSync("./b1.txt");
 
 
-const fs = require('fs');
+// const fs = require('fs');
 // async function readJSON() {
 //   const data = await fs.readFile("data.json", "utf8",(error,result)=>{
 //     if(error){
@@ -86,18 +86,30 @@ const fs = require('fs');
 // }
 // readJSON();
 
-const data = {
-  name: "Sana",
-  role: "Developer",
-  skills: ["Node.js", "Django"]
-};
+// const data = {
+//   name: "Sana",
+//   role: "Developer",
+//   skills: ["Node.js", "Django"]
+// };
 
-async function writeJSON() {
-  await fs.writeFile("data.json",JSON.stringify(data, null, 2),"utf8",(error)=>{
-    if(error){
-      console.log("Error writing file:", error);
-    }
-  console.log("JSON file written successfully");
-})};
+// async function writeJSON() {
+//   await fs.writeFile("data.json",JSON.stringify(data, null, 2),"utf8",(error)=>{
+//     if(error){
+//       console.log("Error writing file:", error);
+//     }
+//   console.log("JSON file written successfully");
+// })};
 
-writeJSON();
+// writeJSON();
+
+
+const os = require('os');
+console.log("operating hostname:", os.hostname());
+console.log("Operating System:", os.type());
+console.log("Platform:", os.platform());
+console.log("CPU Architecture:", os.arch());
+console.log("Total Memory:", os.totalmem());
+console.log("Free Memory:", os.freemem());
+console.log("UserInfo:", os.userInfo());
+console.log("Uptime:", os.uptime());
+console.log("Home Directory:", os.homedir());
