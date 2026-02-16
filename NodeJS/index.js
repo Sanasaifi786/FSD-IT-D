@@ -1,8 +1,13 @@
-// const http = require("http");
-// const myServer = http.createServer((req,res)=>{
-//     console.log("server1");
-//     res.end('Hi this is my first server');
-
+const http = require("http");
+const fs = require("fs");
+const home = fs.readFileSync("./abes.html");
+const myServer = http.createServer((req,res)=>{
+    res.statusCode = 200;
+    // res.setHeader('Content-Type','text/html');
+    res.end(home);
+    // console.log("server1");
+    // res.end('Hi this is my first server');
+})
 //     if(req.url=='/')
 //     {
 //         res.end("<h1>ABES Engineering College Ghaziabad</h1> <br> <img src='https://cache.careers360.mobi/media/article_images/2024/6/20/ABESEC-Ghaziabad.jpg' style='height: 400px; weight: 400px'>");
@@ -24,10 +29,10 @@
 //     }
 // });
 
-// myServer.listen(8080,()=>{
-//     console.log("Server listening on port: 8080");
+myServer.listen(8080,()=>{
+    console.log("Server listening on port: 8080");
     
-// })
+});
 
 // const { log } = require('console');
 
@@ -103,13 +108,14 @@
 // writeJSON();
 
 
-const os = require('os');
-console.log("operating hostname:", os.hostname());
-console.log("Operating System:", os.type());
-console.log("Platform:", os.platform());
-console.log("CPU Architecture:", os.arch());
-console.log("Total Memory:", os.totalmem());
-console.log("Free Memory:", os.freemem());
-console.log("UserInfo:", os.userInfo());
-console.log("Uptime:", os.uptime());
-console.log("Home Directory:", os.homedir());
+// const os = require('os');
+// console.log("operating hostname:", os.hostname());
+// console.log("Operating System:", os.type());
+// console.log("Platform:", os.platform());
+// console.log("CPU Architecture:", os.arch());
+// console.log("Total Memory:", os.totalmem());
+// console.log("Free Memory:", os.freemem());
+// console.log("UserInfo:", os.userInfo());
+// console.log("Uptime:", os.uptime());
+// console.log("Home Directory:", os.homedir());
+
